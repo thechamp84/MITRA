@@ -28,7 +28,7 @@ import heroImage from '../assests/HOME/heroImage.png'
 
 const useStyles = makeStyles((theme) => ({
   AppBar: {
-    backgroundColor: "#006687",
+    backgroundColor: "#21e2fc",
     backgroundSize: "cover",
     padding: "1%",
   },
@@ -54,7 +54,8 @@ const useStyles = makeStyles((theme) => ({
     padding: "5%",
     marginTop: "1%",
     marginBottom: "-700px",
-    marginLeft:"40%",
+    marginLeft: "40%",
+    animation: 'blast 5s',
     [theme.breakpoints.down("xs")]: {
       marginBottom: "0%",
     },
@@ -80,19 +81,18 @@ const useStyles = makeStyles((theme) => ({
   },
   heroImage: {
     position: 'absolute',
-    backgroundRepeat:'no-repeat',
+    backgroundRepeat: 'no-repeat',
     maxHeight: '70vh',
     // width:"1000px",
     backgroundSize: 'cover',
     backgroundImage: `url(${heroImage})`
-},
+  },
 }));
 
 const Home = (props) => {
   const classes = useStyles();
 
   const { lang } = props;
-  console.log("props", lang);
 
   return (
     <React.Fragment>
@@ -103,11 +103,11 @@ const Home = (props) => {
           <Grid item xs={12} sm={5} md={5} lg={5} xl={6} >
             <div className={classes.data}>
               <h1 style={{ fontSize: "70px", lineHeight: "1" }}>
-              Share your scans to stay on track.{" "}
+                Share your scans to stay on track.{" "}
               </h1>
               <h5 className={global.h5}>MITRA</h5>
               <p>
-              Once a week you'll review your scan with your trainer who will use it to track your changes, tweak your plan, and keep you challenged.
+                Once a week you'll review your scan with your trainer who will use it to track your changes, tweak your plan, and keep you challenged.
               </p>
               <h5>
                 Download our apps <br />
@@ -130,7 +130,7 @@ const Home = (props) => {
           </Grid>
           <Grid item xs={12} sm={7} md={7} lg={7} xl={6}>
             <div >
-              <img src={bnnr} alt="BannerImage" width="60%" height="30%" className={classes.img}/>
+              <img src={bnnr} alt="BannerImage" width="60%" height="30%" className={classes.img} />
             </div>
           </Grid>
         </Grid>
@@ -270,7 +270,7 @@ const Home = (props) => {
 
 
 
-<Grid container direction="row" justify="center" alignItems="center">
+      <Grid container direction="row" justify="center" alignItems="center">
         <Grid item xs={12} sm={2} md={2} lg={2}></Grid>
         <Grid item xs={12} sm={8} md={8} lg={8}>
           <div>
@@ -279,7 +279,7 @@ const Home = (props) => {
                 fontSize: "50px",
                 fontWeight: "500",
                 textAlign: "center",
-                color: "#22aa6f",
+                color: "#2596be",
                 marginTop: "15%",
               }}
             >
@@ -300,7 +300,7 @@ const Home = (props) => {
                 marginTop: "2%",
               }}
             >
-             With guidance from your trainer, set acheivable goals for body fat, muscle mass, and measurements based on your 3D body model.
+              With guidance from your trainer, set acheivable goals for body fat, muscle mass, and measurements based on your 3D body model.
             </Typography>
           </div>
         </Grid>
@@ -322,7 +322,7 @@ const Home = (props) => {
           sm={2}
           md={2}
           lg={2}
-          style={{ textAlign: "center", color: "#22aa6f" }}
+          style={{ textAlign: "center", color: "#2596be" }}
         >
           <div>
             <img src={real_time} alt="realTime_icon" width="100px" />
@@ -340,14 +340,14 @@ const Home = (props) => {
           sm={2}
           md={2}
           lg={2}
-          style={{ textAlign: "center", color: "#22aa6f" }}
+          style={{ textAlign: "center", color: "#2596be" }}
         >
           <div>
             <img src={maintenance} alt="maintenance_icon" width="100px" />
           </div>
           <div>
             <h5 className={classes.h5}>
-            Improve your  <br /> eating habits
+              Improve your  <br /> eating habits
             </h5>
           </div>
         </Grid>
@@ -357,14 +357,14 @@ const Home = (props) => {
           sm={2}
           md={2}
           lg={2}
-          style={{ textAlign: "center", color: "#22aa6f" }}
+          style={{ textAlign: "center", color: "#2596be" }}
         >
           <div>
             <img src={income} alt="income_icon" width="100px" />
           </div>
           <div>
             <h5 className={classes.h5}>
-            Guidance on muscle
+              Guidance on muscle
               <br /> recovery
             </h5>
           </div>
@@ -375,14 +375,14 @@ const Home = (props) => {
           sm={2}
           md={2}
           lg={2}
-          style={{ textAlign: "center", color: "#22aa6f" }}
+          style={{ textAlign: "center", color: "#2596be" }}
         >
           <div>
             <img src={access} alt="access_icon" width="100px" />
           </div>
           <div>
             <h5 className={classes.h5}>
-            Personalized workouts
+              Personalized workouts
               <br /> to Users
             </h5>
           </div>
@@ -414,7 +414,7 @@ const Home = (props) => {
         direction="row"
         justify="center"
         alignItems="center"
-        style={{ marginTop: "1%", backgroundColor: "#f1f6f9" }}
+        style={{ marginTop: "1%", backgroundColor: "#2596be" }}
       >
         <Grid item xs={12} sm={2} md={2} lg={2}></Grid>
         <Grid item xs={12} sm={4} md={4} lg={4} style={{ textAlign: "center" }}>
@@ -432,7 +432,7 @@ const Home = (props) => {
           sm={4}
           md={4}
           lg={4}
-          style={{ textAlign: "center", color: "#006687", marginBottom: "5%" }}
+          style={{ textAlign: "center", color: "#fff", marginBottom: "5%" }}
         >
           <h1>Personalized workouts</h1>
         </Grid>
@@ -445,7 +445,7 @@ const Home = (props) => {
           sm={4}
           md={4}
           lg={4}
-          style={{ textAlign: "center", color: "#006687", marginTop: "2%" }}
+          style={{ textAlign: "center", color: "#fff", marginTop: "2%" }}
         >
           <h1>Nutrition coaching</h1>
         </Grid>
@@ -507,9 +507,9 @@ const Home = (props) => {
         <Grid item xs={12} sm={3} md={3} lg={3}></Grid>
       </Grid> */}
 
-     
 
-      
+
+
 
       {/* <Grid
         container
@@ -536,7 +536,7 @@ const Home = (props) => {
       </Grid> */}
 
 
-<Grid
+      <Grid
         container
         direction="row"
         justify="center"
@@ -551,7 +551,7 @@ const Home = (props) => {
                 fontSize: "50px",
                 fontWeight: "500",
                 textAlign: "center",
-                color: "#006687",
+                color: "#2596be",
                 marginTop: "10%",
               }}
             >
@@ -572,9 +572,9 @@ const Home = (props) => {
                 marginTop: "2%",
               }}
             >
-             Workouts will include a mix of resistance training, cardo, and HIIT based on your goals.
-             Personal guidance around nutrition, macros, and meal-timing will help drive your tranformation. 
-             your trainer will assign dynamic recovery activites like foam-rolling, yoga, or stretching on your rest days.
+              Workouts will include a mix of resistance training, cardo, and HIIT based on your goals.
+              Personal guidance around nutrition, macros, and meal-timing will help drive your tranformation.
+              your trainer will assign dynamic recovery activites like foam-rolling, yoga, or stretching on your rest days.
             </Typography>
           </div>
         </Grid>
@@ -601,7 +601,7 @@ const Home = (props) => {
             <img src={search} alt="search_icon" width="100px" />
           </div>
           <div>
-            <h5 style={{ marginTop: "10%" }}>Personalized plan</h5>
+            <h5 style={{ marginTop: "10%", color: '#2596be' }}>Personalized plan</h5>
           </div>
         </Grid>
         <Grid
@@ -610,7 +610,7 @@ const Home = (props) => {
           sm={2}
           md={2}
           lg={2}
-          style={{ textAlign: "center", color: "#006687" }}
+          style={{ textAlign: "center", color: '#2596be' }}
         >
           <div>
             <img src={walkthroughs} alt="walkthrough_icon" width="100px" />
@@ -625,7 +625,7 @@ const Home = (props) => {
           sm={2}
           md={2}
           lg={2}
-          style={{ textAlign: "center", color: "#006687" }}
+          style={{ textAlign: "center", color: '#2596be' }}
         >
           <div>
             <img src={schedule} alt="schedule_icon" width="100px" />
@@ -663,7 +663,7 @@ const Home = (props) => {
         direction="row"
         justify="center"
         alignItems="center"
-        style={{ marginTop: "1%", backgroundColor: "#f1f6f9" }}
+        style={{ marginTop: "1%", backgroundColor: "#2596be" }}
       >
         <Grid item xs={12} sm={2} md={2} lg={2}></Grid>
         <Grid item xs={12} sm={4} md={4} lg={4} style={{ textAlign: "center" }}>
@@ -681,7 +681,7 @@ const Home = (props) => {
           sm={4}
           md={4}
           lg={4}
-          style={{ textAlign: "center", color: "#22aa6f" }}
+          style={{ textAlign: "center", color: "#fff" }}
         >
           <h1>
             WAIST GOAL
@@ -699,7 +699,7 @@ const Home = (props) => {
           style={{
             textAlign: "center",
             fontSize: "70px",
-            color: "#22aa6f",
+            color: "#fff",
             marginTop: "10%",
           }}
         >
@@ -743,7 +743,7 @@ const Home = (props) => {
           sm={4}
           md={4}
           lg={4}
-          style={{ textAlign: "center", color: "#22aa6f" }}
+          style={{ textAlign: "center", color: "#fff" }}
         >
           <h1>BODY FAT GOAL</h1>
         </Grid>
@@ -797,7 +797,7 @@ const Home = (props) => {
         <Grid item xs={12} sm={3} md={3} lg={3}></Grid>
       </Grid> */}
 
-     
+
 
       {/* <Grid
         container

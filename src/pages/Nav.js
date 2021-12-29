@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     right: theme.spacing(2),
   },
   AppBar: {
-    backgroundColor: "#22aa6f",
+    backgroundColor: "rgb(37, 150, 190)",
     backgroundSize: "cover",
     padding: "1%",
   },
@@ -84,7 +84,7 @@ const Nav = () => {
 
   const list = (anchor) => (
     <div
-      style={{ color: "#fff", backgroundColor: "#006687", textAlign: "center" }}
+      style={{ color: "#fff", backgroundColor: "rgb(37, 150, 190)", textAlign: "center" }}
     >
      <ul
                     className="navbar-nav ml-auto mb-2 mb-lg-0"
@@ -102,7 +102,7 @@ const Nav = () => {
                         aria-current="page"
                         to="/"
                       >
-                        About us
+                        ABOUT US
                       </NavLink>
                     </li>
                     <li
@@ -188,14 +188,14 @@ const Nav = () => {
       <Grid
         container
         direction="row"
-        style={{ backgroundColor: "#005373", height: "20%" }}
+        style={{ backgroundColor: "#000", height: "20%" }}
       >
-        <div>
+        {/* <div>
           <br />
-        </div>
+        </div> */}
       </Grid>
       <div className="container-fluid nav_bg">
-        <div className="row" style={{ backgroundColor: "#006687" }}>
+        <div className="row" style={{ backgroundColor: "#000" }}>
           <div className="col-12 mx-auto">
             <nav
               className="navbar navbar-expand-lg navbar-light "
@@ -248,7 +248,7 @@ const Nav = () => {
                         aria-current="page"
                         to="/"
                       >
-                        About us
+                        ABOUT US
                       </NavLink>
                     </li>
                     <li

@@ -34,7 +34,7 @@ const Footer = () => {
         direction="row"
         justify="center"
         alignItems="center"
-        style={{ backgroundColor: "#006687", marginTop: "5%" }}
+        style={{ backgroundColor: "#000", marginTop: "5%" }}
       >
         <Grid item xs={3} sm={3} md={3} lg={3}></Grid>
         <Grid item xs={6} sm={6} md={6} lg={6}>
@@ -69,14 +69,14 @@ const Footer = () => {
         </Grid>
         <Grid item xs={4} sm={4} md={4} lg={4}></Grid>
       </Grid>
-      <Divider />
+      {/* <Divider /> */}
 
       <Grid
         container
         direction="row"
         justify="center"
         alignItems="center"
-        style={{ backgroundColor: "#006687" }}
+        style={{ backgroundColor: "#000" }}
       >
         {/* <Grid item xs={2} sm={2} md={2} lg={2}></Grid> */}
         <Grid
@@ -85,17 +85,17 @@ const Footer = () => {
           sm={12}
           md={12}
           lg={12}
-          style={{ marginTop: "3%", textAlign: "center" }}
+          style={{ textAlign: "center" }}
         >
           <div>
             <List className={classes.list}>
-              <Link href="/about">
+              <Link href="/">
                 <ListItem className={classes.list}>ABOUT US</ListItem>
               </Link>
               <Link href="/">
                 <ListItem className={classes.list}>TRANSFORM SPECS</ListItem>
               </Link>
-              <Link href="/listyourproperty">
+              <Link href="/">
                 <ListItem className={classes.list}>PRODUCTS</ListItem>
               </Link>
               <Link href="/" target="_blank">
@@ -122,8 +122,8 @@ const Footer = () => {
           lg={8}
           style={{
             color: "#fff",
-            marginTop: "2%",
             textAlign: "center",
+            marginTop: "1%",
             fontSize: "10px",
           }}
         >
